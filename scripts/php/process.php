@@ -1,19 +1,16 @@
- <?php
-            include "contact.php";
-            $fname=$_POST['fname'];
-            $lname=$_POST['lname'];
-            $mail=$_POST['mail'];
-            $num=$_POST['num'];
-            $mess=$_POST['mess'];
-            
-            
-            $mysqli->query("INSERT INTO query (fname,lname,mail,num,mess) VALUES('$fname','$lname','$mail','$num','$mess') ");
- 
-if($mysqli->error){
-	echo $mysqli->error;
-}else{
-	echo '1';
-}
-
-            
+  <?php
+include "contact.php";
+$name = $_POST['name'];
+$num = $_POST['num'];
+$mail = $_POST['mail'];
+$message = $_POST['message'];
+$query=("INSERT INTO query(name,num,mail,message) VALUES('$name','$num','$mail','$message')");
+mysqli_query($mysqli,$query);
+?>
+<?php
+include "contact.php";
+$links = $_POST['links'];
+$category = $_POST['category'];
+$query=("INSERT INTO yt(links,category) VALUES('$links','$category')");
+mysqli_query($mysqli,$query);
 ?>

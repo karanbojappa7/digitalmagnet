@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title></title>
+    <title>Digital Magnet Media</title>
+    <link rel="icon" href="style_sheets/pictures/logo.png" type="image/icon type">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,65 +22,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
 
     <!--    files   -->
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="style_sheets/owl.carousel.min.css">
     <link rel="stylesheet" href="style_sheets/style.css">
-
 </head>
 
 <body>
 
     <!-- ..start..   -->
 
-    <nav class="navbar navbar-expand-md  fixed-top nav">
-        <div class="navbar-brand col-sm-3 offset-lg-1 ">
-            <img src="style_sheets/pictures/logo.png" width="60%" class="nodrag logoxs">
-
-            <div class="col-1 offset-10 d-block d-sm-none navtogler  navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-        </div>
 
 
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <div class="col-3 offset-md-2 offset-lg-4 offset-xl-5">
-                <ul class="navbar-nav fon1">
-                    <li class="nav-item">
-                        <div class="nav-link" id="link1">Home</div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link" id="link2">About</div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link" id="link3">Services</div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link" id="link4">Clients</div>
-                    </li>
-                    <li class="nav-item d-none d-xl-block">
-                        <div class="nav-link" id="link5">Contact</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="mainbox" onclick="openFunction()">&#9776;</div>
+    <div id="menu" class="sidemenu">
+        <a href="#" id="link1">Home</a>
+        <a href="#" id="link2">About</a>
+        <a href="#" id="link3">Services</a>
+        <a href="#" id="link4">Clients</a>
+        <a href="#" id="link5">Contact</a>
+        <div class="closebtn" onclick="closeFunction()">&times;</div>
+    </div>
 
     <section id="sec1">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 order-2 order-lg-1 order-sm-1 ">
+                <div class="col-sm-4 mx-auto sample">
+                    <img src="style_sheets/pictures/logolgwhite.png" width="100%">
+                </div>
+                <div class="col-sm-12  text-center">
                     <div class="col-sm-12 para1">
                         <div class="txt1 fon1">Helping You Lead,<span class=""> Digitally!</span> </div>
-                        <div class="txt2 fon2">Marketing Isn’t Digital,<span class="redcol"> The World Is</span> </div>
-                        <div class="btn stop git mt-3 pl-5 pr-5 fon1">Get in Touch</div>
+                        <div class="txt2 fon2 p-3">Marketing Isn’t Digital,<span class="c10"> The World Is</span> </div>
+                        <div class="btn stop git m-3 mt-3 pl-5 pr-5 fon1">Get in Touch</div>
                     </div>
                 </div>
+                <!--
                 <div class="col-sm-6 p-5  order-1">
                     <img class="fpimg" src="style_sheets/pictures/img1.png" width="100%">
                 </div>
+-->
 
             </div>
             <div class="col-sm-12 scr">
@@ -92,24 +74,61 @@
             </div>
 
     </section>
-    <section id="sec2">
-
-        <div class="container">
-            <div class="row">
-                <div class="text-white head mx-auto fon1 pt-5">
-                    About
+        
+    <section id="sec2" class="pt-5 bgfull">
+        <div class="container ct">
+            <div class="mx-auto col-1 head fon1 pb-5">About<div class="ul1"></div>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="style_sheets/pictures/slide-1.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>HTML CSS3 Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="style_sheets/pictures/slide-2.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Wordpress Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="style_sheets/pictures/slide-3.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>PHP MySQL Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="style_sheets/pictures/slide-4.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Javascript Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="style_sheets/pictures/slide-5.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Bootstrap Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
+
+
     <section id="sec3">
         <div class="container">
             <div class="row">
-                <div class=" head mx-auto fon1 pt-5">
-                    Services
-                </div>
+            <div class="mx-auto col-1 head fon1 pb-5">Services<div class="ul2"></div>
+            </div>
                 <div class="card-deck p-4 ">
                     <div class="col-lg-4 col-sm-6 ">
                         <div class="mx-auto  box1 text-center ">
@@ -144,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 pt-5 mt-2">
+                    <div class="col-lg-4 col-sm-6 mt-2">
                         <div class="mx-auto  box4 text-center ">
                             <div class="col-sm-5 mx-auto pt-5 icon">
                                 <img src="style_sheets/pictures/icon4.png" width="80%">
@@ -155,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 pt-5 mt-2">
+                    <div class="col-lg-4 col-sm-6 mt-2">
                         <div class="mx-auto  box5 text-center ">
                             <div class="col-sm-5 mx-auto pt-5 icon">
                                 <img src="style_sheets/pictures/icon5.png" width="80%">
@@ -166,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 pt-5 mt-2">
+                    <div class="col-lg-4 col-sm-6 mt-2">
                         <div class="mx-auto  box6 text-center ">
                             <div class="col-sm-5 mx-auto pt-5 icon">
                                 <img src="style_sheets/pictures/icon6.png" width="80%">
@@ -182,19 +201,24 @@
                 </div>
 
                 <div class="mx-auto col-sm-4 pt-5">
-                    <div class="btn btn-block git fon1">Works</div>
+                    <div class="btn btn-block sub fon1">Works</div>
                 </div>
             </div>
         </div>
 
     </section>
 
+
+
     <section id="sec4">
-        <div class="head fon1 pt-5 text-center c9">
-            OUR ASSOCIATIONS & CERTIFICATIONS
-        </div>
         <div class="container">
             <div class="row">
+        <div class="mx-auto col-6 head fon1 pt-5 c8">OUR ASSOCIATIONS & CERTIFICATIONS<div class="ul3"></div>
+            </div>
+<!--
+            <div class="text-center c8 col-12 head fon1 pt-5">OUR ASSOCIATIONS & CERTIFICATIONSt<div class="ul3"></div>
+            </div>
+-->
                 <div class="text-center c9 fon2 pt-4 col-sm-12">We at Digital Magnet Media believe in community building as well as company development. More than 30 digital marketing businesses around the country collaborated with us to help us speed our project, and we are now pleased to service over 2500 clients across Karnataka.</div>
 
                 <div class="col-sm-4 p-5 gyf">
@@ -216,22 +240,23 @@
 
 
 
-    <section id="sec5">
-        <div class="head fon1 p-5 mx-auto text-center">
-            Contact Us
-        </div>
-        <div class="container">
+    <section id="sec5" class="bgfull">
+        <div class="container ct ">
+ <div class="mx-auto col-1 head fon1 pb-5">Contact<div class="ul4"></div>
+            </div>
             <div class="row">
-                <div class="col-sm-6">
-                    <form id="postform ">
-                        <label class="fon2">Name:</label>
-                        <input type="text" class="form-control form" placeholder="Name">
+                <div class="col-sm-6 pt-3">
+                    <form id="postform">
+                        <!--                        <label class="fon2">Name:</label>-->
+                        <input type="text" class="form-control form mt-2 pt-5" placeholder="Name" name="name" id="name">
 
-                        <label class="fon2">Phone Number:</label>
-                        <input type="text" class="form-control form" placeholder="Phone Number"> <label class="fon2">Email id:</label>
-                        <input type="email" class="form-control form" placeholder="Email id"> <label class="fon2">Message:</label>
-                        <input type="text" class="form-control form" placeholder="You're message">
-                        <input class=" btn git mx-auto mt-3 ml-2 pl-5 pr-5 fon1" value="Submit">
+                        <!--                        <label class="fon2">Phone Number:</label>-->
+                        <input type="text" class="form-control form mt-2 pt-5" placeholder="Phone Number" name="num" id="num">
+                        <!--                        <label class="fon2">Email id:</label>-->
+                        <input type="email" class="form-control form mt-2 pt-5" placeholder="Email id" name="mail" id="mail">
+                        <!--                        <label class="fon2">Message:</label>-->
+                        <input type="text" class="form-control form mt-2 pt-5" placeholder="You're message" name="message" id="message">
+                        <input class=" btn btn-block sub sbtn mx-auto d-block mt-4 col-lg-5  fon1" value="Submit" name="submit" id="submit" type="submit">
 
                     </form>
                 </div>
@@ -244,7 +269,7 @@
                     </div>
 
                     <div class="soc pt-4">
-                        <a href="mailto:@gmail.com?&subject=Hello" ><i class="fa fa-envelope mailicon" aria-hidden="true"></i>
+                        <a href="mailto:@gmail.com?&subject=Hello"><i class="fa fa-envelope mailicon" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.facebook.com/Digitalmagentmedia/" target="_blank"><i class="fa fa-facebook-square fbicon" aria-hidden="true"></i>
                         </a>
@@ -270,29 +295,53 @@
         <div class="fon2 text-center loc pt-2">Handcrafted by<a href="http://bbk.epizy.com/" target="_blank" class="p-2 me"><span class="me">Life_On_Code</a><span class="heart"><img src="style_sheets/pictures/heart.png" class="sm-1" width="15px"></span> </span></div>
     </footer>
 
-    <div class="btn btn-danger upbtn "><i class="fa fa-caret-up" aria-hidden="true"></i>
+    <div class="btn c10 bgc5  upbtn "><i class="fa fa-caret-up" aria-hidden="true"></i>
     </div>
 
 
-    <script>
+
+    <script type="text/javascript">
         $(document).ready(function() {
-            $(window).scroll(function() {
-                var nav = $(window).scrollTop();
-                if (nav > 50) {
-                    //                    $(".nav").css("background-color", "#000000");
-                    $(".nav").css("background-color", "#fff");
-                    $(".nav").css("box-shadow", "0 0px 20px rgba(78, 78, 80, 0.5)");
-                    $(".nav").css("transition", ".5s")
+            $('#submit').click(function() {
+
+                $("#submit").attr("disabled", "disabled");
+                var name = $('input[name=name]').val();
+                var num = $('input[name=num]').val();
+                var mail = $('input[name=mail]').val();
+                var message = $('input[name=message]').val();
+
+                var form_data =
+
+                    'name=' + name +
+                    '&num=' + num +
+                    '&mail=' + mail +
+                    '&message=' + message;
+                if (name != "" && num != "" && mail != "") {
+                    alert(" Thank You! ");
+                    $.ajax({
+                        url: "scripts/php/process.php",
+                        type: "POST",
+                        data: form_data,
+                        cache: false,
+                        success: function(dataResult) {
+                            var dataResult = JSON.parse(dataResult);
+                            if (dataResult.statusCode == 200) {
+                                $("#submit").removeAttr("disabled", "disabled");
+                            } else if (dataResult.statusCode == 201) {
+                                alert("Error Occured! ");
+                            }
+                        }
+                    });
                 } else {
-                    //                    $(".nav").css("background-color", "#0B0C10");
-                    $(".nav").css("background-color", "#fff");
-
-                    $(".nav").css("box-shadow", "none")
-
+                    alert('Please fill all the fields! ');
                 }
+                return false;
             });
         });
 
+    </script>
+
+    <script>
         $(document).ready(function() {
             $(window).scroll(function() {
                 var upbtn = $(window).scrollTop()
@@ -312,55 +361,157 @@
             $('.upbtn').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec1').offset().top
-                }, 1000);
+                }, 200);
             });
         });
-        
+
         $(document).ready(function() {
             $('.stop').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec5').offset().top
-                }, 1000);
+                }, 200);
+
             });
         });
-        
-        
-        
-         $(document).ready(function() {
+
+
+
+        $(document).ready(function() {
             $('#link1').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec1').offset().top
-                }, 1000);
+                }, 100);
             });
 
             $('#link2').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec2').offset().top
-                }, 1000);
+                }, 100);
             });
 
             $('#link3').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec3').offset().top
-                }, 1000);
+                }, 100);
             });
 
             $('#link4').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec4').offset().top
-                }, 1000);
+                }, 100);
             });
 
             $('#link5').click(function() {
                 $('html,body').animate({
                     scrollTop: $('#sec5').offset().top
-                }, 1000);
+                }, 100);
+            });
+        });
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var hme = $(window).scrollTop()
+                if (hme > -1 && hme < 800) {
+                    $('#link1').css("color", "#ffffff");
+                    $('#link1').css("transition", ".5s");
+                } else {
+                    $('#link1').css("color", "#4E4E50");
+                    $('#link1').css("transition", ".5s");
+
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var ul1 = $(window).scrollTop();
+                if (ul1 > 800 && ul1 < 1600) {
+                    $('.ul1').css("width", "70%");
+                    $('#link2').css("color", "#ffffff");
+                    $('.ul1').css("transition", ".5s");
+                } else {
+                    $('.ul1').css("width", "0");
+                    $('#link2').css("color", "#4E4E50");
+                    $('.ul1').css("transition", ".5s");
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var ul2 = $(window).scrollTop();
+                if (ul2 > 1600 && ul2 < 2875) {
+                    $('.ul2').css("width", "70%");
+                    $('#link3').css("color", "#ffffff");
+                    $('.ul2').css("transition", ".5s");
+                } else {
+                    $('.ul2').css("width", "0");
+                    $('#link3').css("color", "#4E4E50");
+                    $('.ul2').css("transition", ".5s");
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var ul3 = $(window).scrollTop();
+                if (ul3 > 2875 && ul3 < 3300) {
+                    $('.ul3').css("width", "90%");
+                    $('#link4').css("color", "#ffffff");
+                    $('.ul3').css("transition", ".5s");
+                } else {
+                    $('.ul3').css("width", "0");
+                    $('#link4').css("color", "#4E4E50");
+                    $('.ul3').css("transition", ".5s");
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var ul4 = $(window).scrollTop();
+                if (ul4 > 3300) {
+                    $('.ul4').css("width", "80%");
+                    $('#link5').css("color", "#ffffff");
+                    $('.ul4').css("transition", ".5s");
+                } else {
+                    $('.ul4').css("width", "0");
+                    $('#link5').css("color", "#4E4E50");
+                    $('.ul4').css("transition", ".5s");
+                }
             });
         });
 
     </script>
+        
+        <script type="text/javascript">
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	loop:true,
+    margin:10,
+    nav:true,
+	autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    navText: [
+	    "<i class='fa fa-angle-left'></i>",
+	    "<i class='fa fa-angle-right'></i>"
+	],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+});
 
-    <!--  script's  -->
+        </script>
+
+
+    <script type="text/javascript"src="scripts/javascript/owl.carousel.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
