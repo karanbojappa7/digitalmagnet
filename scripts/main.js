@@ -8,8 +8,3 @@ function closeFunction(){
  document.getElementById("mainbox").style.marginRight="0px";
  document.getElementById("mainbox").innerHTML="&#9776; ";
 }
-
-
-
-
-
