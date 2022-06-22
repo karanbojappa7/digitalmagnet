@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: transparent;
+    z-index: 10;
 }
 
 ::-webkit-scrollbar {
@@ -120,6 +121,7 @@ body{
     }
     
     .head{
+        padding-top: 5%!important;
         text-align: center !important;
         font-size: 1.5em !important;
         background-color: var(--c5)!important;
@@ -133,6 +135,15 @@ body{
     .nhl{
         background-color: var(--c5) !important;
     }
+    .sidemenu a{
+        color: var(--c8) !important;
+    }
+    
+    .cpy{
+        font-size: 10px !important;
+        padding: 3 !important;
+    }
+        
 }
 
 
@@ -156,6 +167,11 @@ body{
     }    .cobmd{
         border-bottom:1px solid #c9c9c9;
     }
+        .sidemenu a{
+        color: var(--c8) !important;
+    }
+    
+    
 }
 
 @media only screen and (min-width: 1281px) {
@@ -176,6 +192,9 @@ body{
  .ctbo{
     border-top:1px solid #c9c9c9;;
 }
+.logopic{
+        box-shadow: 0 10px 30px -20px rgba(255,255,255,0.3); 
+    }
 
 }
 
@@ -183,23 +202,8 @@ body{
     position: fixed;
     width: 100%;
     height:100vh;
-    z-index: 1;
+    z-index:0;
 }
-
-
-
-
-
-
-/* ---- particles.js container ---- */
-
-
-
-
-
-
-
-
 
 
 
@@ -282,7 +286,7 @@ body{
 
 .fon1{
     font-family: 'Fredoka One', cursive;
-    z-index: 5;
+    z-index: 7;
     cursor:default;
 }
 
@@ -304,6 +308,8 @@ body{
     font-size: 2.5em;
     padding-top: 2.5%;
     padding-bottom:2.5%;
+    letter-spacing: 2px;
+    z-index: 5;
 }
 
 .ul1,.ul2,.ul3,.ul4,.uli
@@ -371,20 +377,23 @@ body{
 
 .ct{
     background-color: var(--c8);
-        box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
     position: relative;
     border-radius: 24px;
     z-index: 5;
 }
 .ct1{
+    position: relative;
     background-color: var(--c8);
     box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
     border-radius: 24px;
     transition: none !important;
-    z-index:8 !important;
+    z-index:6;
 }
 .logopic{
-    padding-top: 17%;
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 3%;
     z-index: 5;
 }
 .fpimg{
@@ -393,13 +402,17 @@ body{
 
 .txt1{
     font-size: 3em;
-    padding-top: 4%;
+    padding-top: 2%;
     color:var(--c8);
+    letter-spacing: 3px;
+    text-shadow: 2px 10px 15px rgba(78,78,80,0.2);
 }
 .txt2{
     font-size: 1.4em;
     font-weight: 600;
     color:var(--c8);
+    text-shadow: 2px 10px 15px rgba(78,78,80,0.2);
+
 }
 
 .git{
@@ -453,7 +466,7 @@ body{
 }
 
 .git:hover{
-    border-color: var(--c8);
+/*    border-color: var(--c8);*/
     color: var(--c10);
     transition: .5s;
     }
@@ -741,108 +754,7 @@ color: var(--c7) !important;
     font-family:'Kumbh Sans', sans-serif;
 }
 
-.soc{
-    width: 100%;
-}
 
-.mailicon,.fbicon,.wappicon,.insicon,.yticon{
-    padding: 2.5%;
-    margin: %;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 1.2em;
-    cursor: pointer;
-    background-color: var(--c9);
-    border-radius: 100%;
-    color: var(--c2);
-    background-color: transparent;
-    border: 1px solid rgba(78, 78, 80,0.2 );
-    text-decoration: none;
-    transition: 300ms;
-
-}
-.mailicon:hover,.fbicon:hover,.wappicon:hover,.insicon:hover,.yticon:hover{
-    box-shadow: 0 1px 10px rgba(243, 107, 46, 0.5);
-    transition: 300ms;
-    text-decoration: none;
-}
-
-
-.mailicon:hover{
-    color: #B23121;
-    transition: .5s;
-}
-.fbicon:hover{
-    color: #3b5998;
-    transition: .5s;
-}
-.wappicon:hover{
-    color: #075E54;
-    transition: .5s;
-}
-.insicon:hover{
-    color: #8a3ab9;
-    transition: .5s;
-}
-.yticon:hover{
-    color: 	#FF0000;
-    transition: .5s;
-}
-
-footer{
-    width: 100%;
-    background-color: var(--c5);
-    color: var(--c8);
-}
-
-.cpy{
-    font-size: 1em;
-    opacity: 0.8
-}
-.loc{
-    font-size: 0.8em;
-    padding-bottom: 1%;
-}
-
-.me:hover{
-    text-decoration: none;
-    color: var(--c10);
-    transition: .5s;
-}
-.me{
-    color: var(--c2);
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-
-.upbtn{
-    position:fixed;
-    right: 10px;
-    bottom: 10px;
-    opacity: 0;
-    z-index: 10;
-    box-shadow: 0 0 5px 1px rgba(255,255,255, 0.1);
-
-}
-
-.heart{
-    margin-left: -0.3%;
-}
-.loc:hover .heart{
-    margin-left: -0.3%;
-    animation: pulse 1s infinite;
-}
-
-@keyframes  pulse{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 a:hover{
     text-decoration: none;
@@ -866,7 +778,6 @@ a:hover{
     opacity: 0;
     animation: fade 1.5s linear 500ms forwards;
     animation-delay: 1s;
-
 }
 
 
@@ -948,15 +859,14 @@ a:hover{
 
 
 .but{
-  border: 2px solid var(--c10);
-  padding: 10px 20px;
-  min-width: 200px;
-  cursor: pointer;
-  transition: color .5s linear;
-  position: relative;
+    border: 2px solid var(--c10);
+    padding: 10px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color .5s linear;
+    position: relative;
     z-index: 5;
-
-
+    box-shadow: 0 10px 25px -20px rgba(255,255,255,0.2);
 }
 .but:hover{
   color: var(--c8);
@@ -986,29 +896,233 @@ transition: transform .5s;
 
 }
 
+.tsw{
+    text-shadow: 3px 4px 20px rgba(78,78,80,0.5);
+    text-shadow: 3px 4px 20px rgba(78,78,80,0.5);
+}
+
+.tsb{
+    text-shadow: 3px 4px 25px rgba(0,0,0,0.3);
+}
+
+.bsw{
+    box-shadow: 0 20px 35px -20px rgba(78,78,80,0.5);
+}
+.bsb{
+    box-shadow: 0 20px 30px -20px rgba(0 ,0 ,0 , 0.5);
+}
+
+footer{
+    width: 100%;
+    background-color: var(--c5);
+    color: var(--c8);
+    z-index: 8!important;
+}
+.ulsec{
+    font-weight: 300 !important;
+    box-shadow: 0 10px 40px -20px rgba(48,48,48, 0.8);
+
+}
+
+.folink{
+    padding: 2.5%;
+    padding-left: 3%;
+    color: var(--c2);
+    cursor: pointer;
+
+}
+
+.usel{
+    position: relative;
+    font-size: 1.5em;
+}
+
+
+.foottxt{
+}
+
+
+
+.folink::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: var(--c10);
+    transition: 300ms;
+}
+
+.folink:hover::after {
+    width: 75%;
+    
+}
+
+.folink:hover{
+    color: var(--c8);
+    transition: .5s;
+}
+
+
+.cpy{
+    position: relative;
+    font-size: 15px;
+    opacity: 0.8;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: -.5%;
+    letter-spacing: 1.5px;
+}
+.loc{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.me{
+    color: var(--c2);
+    font-weight: bolder;
+    text-decoration: none;
+}
+.me:hover{
+    text-decoration: none;
+    color: var(--c10);
+    transition: .5s;
+
+}
+
+.heart{
+    margin-left: -0.3%;
+}
+.loc:hover .heart{
+    margin-left: -0.3%;
+    animation: pulse 1s infinite;
+}
+
+@keyframes  pulse{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.upbtn{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    z-index: 10;
+    box-shadow: 0 0 5px 1px rgba(255,255,255, 0.1);
+
+}
+.soc{
+    width: 100%;
+}
+
+.mailicon,.fbicon,.wappicon,.insicon,.yticon{
+    padding: 2.5%;
+    text-align: center;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--c9);
+    text-decoration: none;
+    transition: 300ms;
+}
+.mailicon:hover,.fbicon:hover,.wappicon:hover,.insicon:hover,.yticon:hover{
+    transition: 300ms;
+    text-decoration: none;
+
+}
+
+.mailicon:hover{
+    color: #B23121;
+    transition: .5s;
+}
+.fbicon:hover{
+    color: #3b5998;
+    transition: .5s;
+}
+.wappicon:hover{
+    color: #075E54;
+    transition: .5s;
+}
+.insicon:hover{
+    color: #8a3ab9;
+    transition: .5s;
+}
+.yticon:hover{
+    color: 	#FF0000;
+    transition: .5s;
+}
 
 
 
 
 
 
+.gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	background-color: var(--c5);
+	padding: 100px 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gallery .gallery-filter .filter-item{
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin:0 10px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: #ff9800;
+	border-color : #ff9800;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+}
 
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width: 991px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+}
+@media(max-width: 767px){
+    .gallery .gallery-item{
+		width: 100%;
+	}	
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+}
 
 
 

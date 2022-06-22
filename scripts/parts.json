@@ -1,7 +1,7 @@
 particlesJS({
   "particles": {
     "number": {
-      "value":2,
+      "value":3,
       "density": {
         "enable": true,
         "value_area": 1000
@@ -20,7 +20,7 @@ particlesJS({
         "nb_sides": 7
       },
       "image": {
-        "src": "https://lh3.googleusercontent.com/SFWDIB1TtGE3MMm_652Xi1IbiFq_tyeTuPQj7Ymnc2jDuCfycdH_D8Qib21-KawphCQTW-PIrOWBkki2btnjI195qraz5h2bz9xo1Rv8bU0vYv1eP4FaYrm_yYLTuEEZcozxwV6qxeZuV-XFMAzxWhhDu55NYnnDw9gbucvMPu605xiN3xqN1l3CytTqJr6g24L0-Bb1RXJId7FadPCB-jmuujtgyfPhTvf2DsIVfWuuPkYWBqlQoZYSk7Reiro9qbhYlfO8hxXPJHx5iH1yMbuyS8-V3IQ9YWC6oJQfKqC9XOqm7o29g6M-JdZIBICfP4fOGMYXBCFOvJwdjTE70qIYdNDJgbTFai5MwM7gP84LgaYDt9z_jZDHttx8lUmJXnJHEuZvRk4SqjVFUsvFoVmvF82hzsbJtzACgy1TpugKb3zKjKkiUI2SzfMjai16RuMcF88T2hWAeTFaI9U1gVDEO2i37PE8SdZbmMbOdicT63IBVTLs3vVJAja4nJrd2Xc3b00GDNi09TPkOOPfX1V_OHPJtADTELfGSI_9ikbkB6CmB20O6AhPtNajzIYgHXCQbntHpJqMJW1kb9d0XSujQCio9BujGQvlj9uifU3G5WC4wOWzII7lKpR5mWmkAg4AnzDSXy4ikVXaaK0GkGFUVh_5-1Z9Drarj3mnmQsE-wCLQYvbb3vjZSzNB3Ew4rT4Yngd1Hj7RmuCg0ZZTiP4cERUpo-4VYuHJTb3mqGRSOcN54wLeNa3XEhLHw=s512-no?authuser=0",
+        "src": "https://lh3.googleusercontent.com/BIcCZAjGFEWlUFeAjquLxJMtPUTZASBLNf-Bgrgt_pA1fd991ZYD3p-IFVDXcxDRmhX37ok0JlCgk-OxC_QJeee3erTn7RT8681EjhmECEo9cxWix1cXaaaUxNlNt68Xz0wrIW4wO7CKzQs3x0ZQyZbiFDV1dWYm-6Wf0wm94v1N5MW_Oq1JAcPv_jeYBCM9ZoF2P2drD-xOOnzScxSwWiP8uwOzYGAZQViK7a8ZqHZVuyBiRiyM7-yFKIG4LC4SdPf8ye4M8pmeDBHNQhn-bfzL2bEzzYVpVDLnZJaaVYBoaMke-ABs3Hghk8PhbWWCtN_vf3NNA6IYBgGTk1C_tjS67atht29kpItJCSlgMFq7t-NLnKmPuFAlIyJ56dlOjswWKIhjjYCqMgOtbgPkvMkmamRwPBf1TD0mkAMGBF9MtOYOM27tNOmJRbjYWj-uxvCuvVwrV0w5XTWzjjIOnI9YIa404xzLGGWiyIHuZr1fhjiwXY9LWW-RsYb5nlyQs9s0MRiMFOyoMEIB7SB_u_vVCZhJqSl7Ak50vf5xcdvCp-K_TGm0p3djfgLyOJldkyuSX2ASAmDc4G8AnwNoDem2id8jLzyTzeU5f834j0uvE7B6quPWAUT3FF5IIlPMiSO9WtuSx7ziqM_KpkPHwqpqXvVbiQClc8TvYTsGDjN_fki_B3KNh523d4OOHqmsRP4pZXJ504Z9B0atglNXrNr56aq8pnw9v_9N2nqgPiWOKxVwifuEKjrIBpVhjQ=s512-no?authuser=0",
         "width": 100,
         "height": 100
       }
