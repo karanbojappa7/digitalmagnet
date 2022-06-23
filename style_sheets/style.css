@@ -338,6 +338,7 @@ body{
 
 
 .bg{
+    background-attachment: fixed;
     margin-top: 5%;
     width: 80%;
     height: 80vh;
@@ -348,6 +349,7 @@ body{
 }
 
 .bgfull{
+    background-attachment: fixed;
     padding-top: 2%;
     width: 100%;
     padding-bottom: 5%;
