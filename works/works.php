@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Digital Magnet Media</title>
-    <link rel="icon" href="style_sheets/pictures/logo.png" type="image/icon type">
+    <title>Reach On Digital</title>
+    <link rel="icon" href="style_sheets/pictures/logolgwhite.png" type="image/icon type">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,20 +14,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--   bootstrap CDN,s  -->
     <!--   google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <!--    files   -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" href="../style_sheets/style.css">
 
+    <link rel="stylesheet" href="style_sheets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../style_sheets/style.css">
 </head>
 
 <body>
@@ -35,6 +41,7 @@
     <!-- ..start..   -->
 
     <nav class="navbar ">
+        <!--
         <div id="mainbox" onclick="openFunction()">&#9776;</div>
         <div id="menu" class="sidemenu">
             <a href="#" id="link1" id="link1" class="tsb fon1">Home</a>
@@ -47,38 +54,23 @@
             </div>
             <div class="closebtn" onclick="closeFunction()">&times;</div>
         </div>
+-->
     </nav>
 
 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <div class="col-3 offset-md-2 offset-lg-4 offset-xl-5">
-            <ul class="navbar-nav fon1">
-                <li class="nav-item">
-                    <div class="nav-link" id="link1">Home</div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link" id="link2">About</div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link" id="link3">Services</div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link" id="link4">Clients</div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link" id="link5">Contact</div>
-                </li>
-            </ul>
+    <section id="gsec1">
+        <div class="col-sm-4 mx-auto logogpic ">
+            <img src="../style_sheets/pictures/logolgwhite.png" width="100%">
         </div>
-    </div>
-    </nav>
+
+    </section>
 
 
 
-    <section class="gallery">
-        <div class="container">
+    <section class="gallery bgfull">
+        <div class="container ctg">
             <div class="row">
-                <div class="gallery-filter">
+                <div class="gallery-filter fon3">
                     <span class="filter-item active" data-filter="all">All</span>
                     <span class="filter-item" data-filter="Instagram">Instagram</span>
                     <span class="filter-item" data-filter="Facebook">Facebook</span>
@@ -95,8 +87,8 @@ if(mysqli_num_rows($queryform) > 0){
 while($result= mysqli_fetch_array($queryform)){
 ?>
 
-                <div class="gallery-item mt-2 <?php echo $result['category']?> ">
-                    <div class="card text-center bg-light">
+                <div class="gallery-item  mt-2 <?php echo $result['category']?> ">
+                    <div class="card galb text-center bg-light ">
                         <iframe src="https://www.youtube.com/embed/<?php echo $result['links']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h4 class="card-title pt-1"><?php echo $result['head'] ?></h4>
                         <p class="card-text pb-1"><?php echo $result['description'] ?></p>
@@ -107,11 +99,25 @@ while($result= mysqli_fetch_array($queryform)){
 }
 ?>
             </div>
+
+            <a href="../index.html"><button class="mt-5 bgc8 but mx-auto d-block">Return</button></a>
+
+
         </div>
+
     </section>
 
+
+
+
+
+
+
+
+
+
     <footer>
-        <div class="container-fluid p-5">
+        <div class="container-fluid p-5 ">
             <div class="row">
                 <div class="col-sm-4 pt-3 pb-3 order-3 order-sm-1 order-lg-1 ">
                     <img src="../style_sheets/pictures/logowhite.png" width="100%">
@@ -139,12 +145,12 @@ while($result= mysqli_fetch_array($queryform)){
                     <div class="fon1 ">
                         <br>
                         <div class="fon3 foottxt row mx-auto text-center ">
-                            <div id="flink1" class="folink">Home</div>
-                            <div id="flink2" class="folink">About</div>
-                            <div id="flink3" class="folink">Services</div>
-                            <div id="flink4" class="folink">Clients</div>
-                            <div id="flink4" class="folink">Works</div>
-                            <div id="flink5" class="folink">Contact</div>
+                            <a href="../index.html"><div id="flink1" class="folink pr-3">Home</div></a>
+                            <a href="../index.html"><div id="flink2" class="folink pr-3">About</div></a>
+                            <a href="../index.html"><div id="flink3" class="folink pr-3">Services</div></a>
+                            <a href="../index.html"><div id="flink4" class="folink pr-3">Clients</div></a>
+                            <a href="../index.html"><div id="flink4" class="folink pr-3">Works</div></a>
+                            <a href="../index.html"><div id="flink5" class="folink pr-3">Contact</div></a>
                         </div>
                     </div>
                 </div>
@@ -164,15 +170,16 @@ while($result= mysqli_fetch_array($queryform)){
             </div>
         </div>
     </footer>
+
+
+
     <script>
         const filterContainer = document.querySelector(".gallery-filter"),
             galleryItems = document.querySelectorAll(".gallery-item");
 
         filterContainer.addEventListener("click", (event) => {
             if (event.target.classList.contains("filter-item")) {
-                // deactivate existing active 'filter-item'
                 filterContainer.querySelector(".active").classList.remove("active");
-                // activate new 'filter-item'
                 event.target.classList.add("active");
                 const filterValue = event.target.getAttribute("data-filter");
                 galleryItems.forEach((item) => {
