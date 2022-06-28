@@ -11,6 +11,8 @@ mysqli_query($mysqli,$query);
 include "contact.php";
 $links = $_POST['links'];
 $category = $_POST['category'];
-$query=("INSERT INTO yt(links,category) VALUES('$links','$category')");
+$head = $_POST['head'];
+$description = $_POST['description'];
+$query=("INSERT INTO yt(links,category,head,description) VALUES('$links','$category','$head','$description')");
 mysqli_query($mysqli,$query);
 ?>
