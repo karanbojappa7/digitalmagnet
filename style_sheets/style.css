@@ -96,9 +96,10 @@ body{
     
     
     .logopic{
-        position: relative;
+        position: absolute !important;
         top: 100px;
-        width: 90%;
+        width: 100%;
+        padding: 5% !important;
         padding-bottom: 25% !important;
     }
     
@@ -119,16 +120,18 @@ body{
         padding-top: 25% !important;
     }
     
+/*
     #sec1{
-        height: 100vh !important;
+        min-height: 100vh !important;
     }    
     #sec2{
         height: 100vh !important;
     }
+*/
 
     .txt1{
         font-size: 1em !important;
-        margin-top: 70% !important;
+        margin-top: 140% !important;
     }   
     .txt2{
         font-size: .8em !important;
