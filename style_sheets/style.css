@@ -94,6 +94,7 @@ body{
         width: 100%;
     }
     
+    
     .logopic{
         position: relative;
         top: 5px;
@@ -101,7 +102,9 @@ body{
         padding-bottom: 35% !important;
     }
     
-    
+    .navbar{
+        height: 6vh !important;
+    }
     .navlogo{
         margin-top: -25%!important;
         width: 80%;
@@ -114,13 +117,29 @@ body{
     .map{
         padding-top: 25% !important;
     }
+    
+    #sec1{
+        height: 100vh !important;
+    }    
+    #sec2{
+        height: 100vh !important;
+    }
 
     .txt1{
         font-size: 1em !important;
-        margin-top: 75% !important;
+        margin-top: 100% !important;
     }   
     .txt2{
         font-size: .8em !important;
+    }
+    
+    .git{
+        margin-top: 15% !important;
+
+        
+    }
+    .scr{
+        padding-bottom: 10% !important;
     }
 
     #mainbox{
@@ -149,7 +168,7 @@ body{
     }
     
     .head{
-        padding-top: 5%!important;
+        padding-top: 4%!important;
         text-align: center !important;
         font-size: 1.5em !important;
         background-color: var(--c5)!important;
@@ -265,7 +284,7 @@ body{
 
 .navbar{
     position: fixed;
-    height: 5.5vh;
+    height: 6vh;
     width: 100%;
     background-color: var(--c5);
     z-index: 8;
