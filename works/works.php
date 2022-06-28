@@ -28,6 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <!--    files   -->
+    <script type="text/javascript" src="../scripts/javascript/mgGlitch.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -40,26 +42,9 @@
 
     <!-- ..start..   -->
 
-    <nav class="navbar ">
-        <!--
-        <div id="mainbox" onclick="openFunction()">&#9776;</div>
-        <div id="menu" class="sidemenu">
-            <a href="#" id="link1" id="link1" class="tsb fon1">Home</a>
-            <a href="#" id="link2" id="link2" class="tsb fon1">About</a>
-            <a href="#" id="link3" id="link3" class="tsb fon1">Services</a>
-            <a href="#" id="link4" id="link4" class="tsb fon1">Clients</a>
-            <a href="#" id="link5" id="link5" class="tsb fon1">Contact</a>
-            <div class="col-sm-10 mx-auto pt-5 m-5">
-                <img src="style_sheets/pictures/logolgwhite.png" width="100%">
-            </div>
-            <div class="closebtn" onclick="closeFunction()">&times;</div>
-        </div>
--->
-    </nav>
-
 
     <section id="gsec1">
-        <div class="col-sm-4 mx-auto logogpic ">
+        <div class="col-sm-4 mx-auto logogpic glitchimg">
             <img src="../style_sheets/pictures/logolgwhite.png" width="100%">
         </div>
 
@@ -68,7 +53,8 @@
 
 
     <section class="gallery bgfull">
-        <div class="container ctg">
+        <div class="container">
+        <div class=" ctg">
             <div class="row">
                 <div class="gallery-filter fon3">
                     <span class="filter-item active" data-filter="all">All</span>
@@ -104,6 +90,7 @@ while($result= mysqli_fetch_array($queryform)){
 
 
         </div>
+        </div>
 
     </section>
 
@@ -112,17 +99,13 @@ while($result= mysqli_fetch_array($queryform)){
 
 
 
-
-
-
-
     <footer>
-        <div class="container-fluid p-5 ">
+        <div class="container-fluid p-5">
             <div class="row">
                 <div class="col-sm-4 pt-3 pb-3 order-3 order-sm-1 order-lg-1 ">
-                    <img src="../style_sheets/pictures/logowhite.png" width="100%">
+                    <img src="../style_sheets/pictures/logowhite.png" width="100%"  class="glitchimg footlogo">
 
-                    <div class="pt-2 text-center justify-content-center soc ">
+                    <div class="text-center justify-content-center soc ">
                         <a href="mailto:@gmail.com?&subject=Hello"><i class="bsw fa fa-envelope mailicon" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.facebook.com/Digitalmagentmedia/" target="_blank"><i class="fa fa-facebook-square fbicon" aria-hidden="true"></i>
@@ -145,17 +128,17 @@ while($result= mysqli_fetch_array($queryform)){
                     <div class="fon1 ">
                         <br>
                         <div class="fon3 foottxt row mx-auto text-center ">
-                            <a href="../index.html"><div id="flink1" class="folink pr-3">Home</div></a>
-                            <a href="../index.html"><div id="flink2" class="folink pr-3">About</div></a>
-                            <a href="../index.html"><div id="flink3" class="folink pr-3">Services</div></a>
-                            <a href="../index.html"><div id="flink4" class="folink pr-3">Clients</div></a>
-                            <a href="../index.html"><div id="flink4" class="folink pr-3">Works</div></a>
-                            <a href="../index.html"><div id="flink5" class="folink pr-3">Contact</div></a>
+                            <div id="flink1" class="folink">Home</div>
+                            <div id="flink2" class="folink">About</div>
+                            <div id="flink3" class="folink">Services</div>
+                            <div id="flink4" class="folink">Clients</div>
+                            <div id="flink4" class="folink">Works</div>
+                            <div id="flink5" class="folink">Contact</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 order-2">
-                    <div class="pl-5 pr-5 pt-3 pb-3 map col-sm-12">
+                <div class="col-sm-3 order-2">
+                    <div class=" p-3 map ">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31104.522779869072!2d77.515258072429!3d12.96767028619905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDigital%20Magnet%20Media%20%2COld%20Annaporneshwari%20Nagar%20Police%20station%20Building%2C%20Papreddy%20Palya%2C%202nd%20Stage%2C%20Naagarabhaavi%2C%20Bengaluru%2C%20Karnataka%20560072.!5e0!3m2!1sen!2sin!4v1653868074360!5m2!1sen!2sin" width="100%;" style="box-shadow: 0 10px 20px -20px rgba(255,255,255, 0.5); border: .01px solid var(--c10);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
@@ -170,7 +153,6 @@ while($result= mysqli_fetch_array($queryform)){
             </div>
         </div>
     </footer>
-
 
 
     <script>
@@ -195,6 +177,23 @@ while($result= mysqli_fetch_array($queryform)){
         });
 
     </script>
+    
+            <script type="text/javascript">
+        $(".glitchimg").mgGlitch({
+            destroy: false,
+            glitch: true,
+            scale: true,
+            blend: true,
+            blendModeType: 'hue',
+            glitch1TimeMin: 300,
+            glitch1TimeMax: 600,
+            glitch2TimeMin: 5,
+            glitch2TimeMax: 115,
+            zIndexStart: 2
+        });
+    </script>
+    
+    
 </body>
 
 </html>

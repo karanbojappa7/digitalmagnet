@@ -97,8 +97,8 @@ body{
     .logopic{
         position: relative;
         top: 5px;
-        width: 70%;
-        padding-top: 50% !important;
+        width: 90%;
+        padding-bottom: 35% !important;
     }
     
     
@@ -110,10 +110,17 @@ body{
     .footlogo{
         
     }
+    
+    .map{
+        padding-top: 25% !important;
+    }
 
     .txt1{
-        font-size: 3em;
+        font-size: 1em !important;
         margin-top: 75% !important;
+    }   
+    .txt2{
+        font-size: .8em !important;
     }
 
     #mainbox{
@@ -132,6 +139,13 @@ body{
     }
     .up{
     padding-top: 5% !important;
+    }
+    
+    
+    .gyf{ 
+        border-radius: 24px !important;
+            -webkit-filter: grayscale(0%)!important; 
+  filter: grayscale(0%)!important;!important
     }
     
     .head{
@@ -154,7 +168,11 @@ body{
     }
     
     .cpy{
-        font-size: 10px !important;
+        font-size: 9px !important;
+        padding: 3 !important;
+    }    
+    .loc{
+        font-size: 8px !important;
         padding: 3 !important;
     }
         
@@ -406,14 +424,7 @@ body{
     background-color: var(--c8);
 }
 
-.ctg{
-    background-color: var(--c9);
-    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
-    position: relative;
-    border-radius: 24px;
-    z-index: 5;
-    padding: 2%;
-}
+
 .ct{
     background-color: var(--c8);
     box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
@@ -776,6 +787,7 @@ color: var(--c7) !important;
     transition: .5s;
     z-index: 5;
     cursor:default;
+    border-radius: 24px;
 }
 
 
@@ -1130,7 +1142,14 @@ footer{
 
 
 
-
+.ctg{
+    background-color: var(--c9);
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
+    position: relative;
+    border-radius: 24px;
+    z-index: 5;
+    padding: 5%;
+}
 #gsec1{
     width: 100%;
     background-color: var(--c5);
