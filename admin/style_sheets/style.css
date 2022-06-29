@@ -159,9 +159,21 @@ a{
 }
 a:hover{
     text-decoration: none;
-    color: var(--c5);
+    color: none;
 
 }
+
+@media only screen and (max-width: 575px) {
+    .ct{
+        background-color: none !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+    z-index: 5;
+    }
+    
+}
+
+
 
 
 .but{
@@ -175,7 +187,7 @@ a:hover{
     box-shadow: 0 10px 25px -20px rgba(255,255,255,0.2);
 }
 .but:hover{
-  color: var(--c8);
+  color: var(--c8)!important;
     z-index: 5;
     
 }
@@ -199,7 +211,7 @@ transition: transform .5s;
   transform-origin: 0 0;}
 .but:hover::before{
   transform: scaleX(1);
-    color: var(--c8)
+    color: var(--c8)!important;
 }
 
 .bgfull{

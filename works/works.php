@@ -44,8 +44,8 @@
 
 
     <section id="gsec1">
-        <div class="col-sm-4 mx-auto logogpic glitchimg">
-            <img src="../style_sheets/pictures/logolgwhite.png" width="100%">
+        <div class="col-sm-4 mx-auto  glitchimg logogpic">
+            <img src="../style_sheets/pictures/logolgwhite.png" width="100%" class="">
         </div>
 
     </section>
@@ -86,7 +86,7 @@ while($result= mysqli_fetch_array($queryform)){
 ?>
             </div>
 
-            <a href="../index.html"><button class="mt-5 bgc8 but mx-auto d-block">Return</button></a>
+            <a href="../index.html"><button class="mt-5  but mx-auto d-block">Return</button></a>
 
 
         </div>
@@ -98,12 +98,11 @@ while($result= mysqli_fetch_array($queryform)){
 
 
 
-
     <footer>
         <div class="container-fluid p-5">
             <div class="row">
                 <div class="col-sm-4 pt-3 pb-3 order-3 order-sm-1 order-lg-1 ">
-                    <img src="../style_sheets/pictures/logowhite.png" width="100%"  class="glitchimg footlogo">
+                    <img src="../style_sheets/pictures/logowhite.png" width="100%"  class=" footlogo">
 
                     <div class="text-center justify-content-center soc ">
                         <a href="mailto:@gmail.com?&subject=Hello"><i class="bsw fa fa-envelope mailicon" aria-hidden="true"></i>
