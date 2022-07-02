@@ -197,6 +197,36 @@ body{
         padding: 3 !important;
     }
     
+    .ctc{
+    background-color: var(--c7);
+/*    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);*/
+    position: relative;
+    border-radius: 24px;
+    width: 100% !important;
+    z-index: 5;
+}
+    .arr{
+    position: relative;
+    top: 25px;
+    right: 8% !important;
+}
+
+    .ct,.ctb,.ctc{
+    border-radius: 0px !important;
+}
+    .bgfulltes{
+    background-attachment: fixed;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 5%;
+    background-image:none !important;
+    background-position: 8px 8px;
+    background-size: 16px 16px;
+}
+
+
+    
+    
 }
 
 
@@ -374,24 +404,65 @@ body{
     z-index: 3;
 }
 
-
-
-
 #sec1{
     width: 100%;
+    height: 100%;
     background-color: var(--c5);
-    padding-bottom: 5%;
-    
+    background-attachment: fixed;
+    position: fixed;
+    z-index: 3;
 }
 
 #sec2{
     width: 100%;
     background-color: var(--c8);
-    }
+    z-index: 5;
+    position: relative;
+    top: 800px;
+}
+
+#work{
+    width: 100%;
+    background-color: var(--c7);
+    z-index: 7;
+    position: relative;
+    top: 800px;
+}
+#sec3{
+    width: 100%;
+    background-color: var(--c9) !important;
+    position: relative;
+    padding-bottom: 5%;
+    top: 800px;
+    z-index: 6
+}
+#sec4{
+    width: 100%;
+    background-color: var(--c5);
+    padding-bottom: 2%;
+     position: relative;
+    top: 800px;
+    z-index: 6
+}
+#sec6{
+    width: 100%;
+    background-color: var(--c9);
+    padding-bottom: 2%;
+     position: relative;
+    top: 800px;
+    z-index: 6
+}
+#sec5{
+    width: 100%;
+    background-color: var(--c8);
+     position: relative;
+    top: 800px;
+    z-index: 6
+}
 
 
 .bg{
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
     margin-top: 5%;
     width: 80%;
     height: 80vh;
@@ -410,22 +481,17 @@ body{
     background-position: 8px 8px;
     background-size: 16px 16px;
 }
-
-#sec3{
-    height: 80%;
+.bgfulltes{
+    background-attachment: fixed;
+    padding-top: 2%;
     width: 100%;
-    background-color: var(--c9);
     padding-bottom: 5%;
+    background-image:radial-gradient(rgb(130, 130, 130) 2%, transparent 8%);
+    background-position: 8px 8px;
+    background-size: 16px 16px;
+    
 }
-#sec4{
-    width: 100%;
-    background-color: var(--c5);
-    padding-bottom: 2%;
-}
-#sec5{
-    width: 100%;
-    background-color: var(--c8);
-}
+
 
 
 .ct{
@@ -433,6 +499,23 @@ body{
     box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
     position: relative;
     border-radius: 24px;
+    z-index: 5;
+}
+
+.ctb{
+    background-color: var(--c5);
+    position: relative;
+    border-radius: 24px;
+    z-index: 5;
+    box-shadow:  0 20px 40px -20px rgba(65, 65, 65, 0.5);
+}
+
+.ctc{
+    background-color: var(--c7);
+/*    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);*/
+    position: relative;
+    border-radius: 24px;
+    width: 80%;
     z-index: 5;
 }
 .ct1{
@@ -611,14 +694,13 @@ background-color: var(--c5);
 
 }
 
-
+/*
 .slider-card {
     padding: 5%;
     margin: 5%;
     width: 300px;
   border-radius: 24px;
   box-shadow: 0px 15px 55px -15px rgba(0, 0, 0, 0.5);
-/*  box-shadow: 0 15px 35px -20px rgba(243, 107, 46, 0.1);*/
   transform: scale(0.75);
   opacity: 0.6;
 transition: all 0.3s;
@@ -653,6 +735,7 @@ color: var(--c7) !important;
   z-index: 1;
     
 }
+*/
 .owl-dots {
   text-align: center;
 }
@@ -984,6 +1067,9 @@ footer{
     background-color: var(--c5);
     color: var(--c8);
     z-index: 8!important;
+     position: relative;
+    top: 800px;
+    z-index: 6;
 }
 .ulsec{
     font-weight: 300 !important;
@@ -1003,11 +1089,6 @@ footer{
     position: relative;
     font-size: 1.5em;
 }
-
-
-.foottxt{
-}
-
 
 
 .folink::after{
@@ -1139,7 +1220,6 @@ footer{
 }
 #gsec1{
     width: 100%;
-    height: 60vh;
     background-color: var(--c5);
 }
 
@@ -1214,5 +1294,154 @@ footer{
 .galb{
     border:1px solid var(--c10);
 }
+
+
+/*----TESTIMONIALS----*/
+
+.box-area {
+	padding: 30px;
+	position: relative;
+	display: block;
+	background: var(--c5);
+	color: var(--c8);
+	box-shadow:  0 20px 40px -20px rgba(25, 25, 25, 0.5);
+	margin: 40px 0;
+}
+.box-area h5 {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--c10);
+	margin-top: 30px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.box-area span {
+	color: var(--c2);
+	display: block;
+	font-size: 13px;
+	margin: 0 0 10px;
+	font-weight: 400;
+}
+.box-area .content {
+	color: 	color: var(--c8);
+;
+}
+.box-area .img-area {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	right: 0;
+	z-index: 1;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.box-area .img-area img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+	.owl-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.box-area {
+		text-align: center;
+	}
+	.owl-nav {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about{
+    width: 100%;
+    background-color: 
+}
+
+.abtbox{
+    width: 100%;
+    background-color: var(--c5);
+    color: var(--c8);
+    font-size: 5em;
+    padding: 10%;
+    position: relative;
+}
+
+
+.arr{
+    position: relative;
+    top: 25px;
+    right: 3%;
+}
+
+.ro{
+    letter-spacing: 5px;
+    font-size: 2.5em;
+}
+
+
+.lidata{
+    padding-top: 3%;
+    padding-left: 5%;
+    
+}
+
+.abc{
+    color: var(--c8) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
