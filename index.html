@@ -59,9 +59,9 @@
             <div class="closebtn" onclick="closeFunction()">&times;</div>
         </div>
     </nav>
-
+<span class="fxd">
     <section id="sec1">
-<div class="fxd">
+
                 <div class="container">
             <div class="row">
                 <div class="col-sm-5 mx-auto d-block logopic ">
@@ -88,9 +88,10 @@
             </div>
         </div>
         
-        </div>
+
 
     </section>
+            </span>
 
     <section id="sec2" class="bgfull">
         <div class="head fon1  offset-sm-1 headsm tsb">About
@@ -484,7 +485,7 @@
         $(document).ready(function() {
             $('.upbtn').click(function() {
                 $('html,body').animate({
-                    scrollTop: $('#sec1').offset().top
+                    scrollTop: $('.fxd').offset().top
                 }, 200);
             });
         });
@@ -519,7 +520,7 @@
         $(document).ready(function() {
             $('#link1,#flink1').click(function() {
                 $('html,body').animate({
-                    scrollTop: $('#sec1').offset().top
+                    scrollTop: $('.fxd').offset().top
                 }, 300);
             });
 
