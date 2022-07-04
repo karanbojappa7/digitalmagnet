@@ -73,7 +73,7 @@
                         <div class="wrapp ">
                             <div class="txt1 fon1 swipe ">Helping You Lead,<span class=""> Digitally!</span> </div>
                             <div class="txt2 fon2 p-3 swipe swipe--delay">Marketing Isn’t Digital,<span class="c10"> The World Is</span> </div>
-                            <div id="zhigh" class="btn  git stop but c2 mt-5 fon1 bgc5">Get in Touch</div>
+                            <div id="zhigh" class="btn git stop but c2 mt-5 fon1 bgc5">Get in Touch</div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
 
 
 
-    <section id="work" class="pb-5">
+    <section id="work" class="">
         <div class="head fon1 offset-lg-1 c8 offset-sm-1 tsb headsm">Works
             <div class="col-sm-2 ">
                 <div class="ul2">
@@ -128,14 +128,16 @@
         </div>
 
         <div class="container ctb p-5  bsb">
-            <div class="col-sm-12 c8 pl-5 pr-5 pb-5 pt-3 text-center fon2">
+            <div class="col-sm-12 c8 pl-5 pr-5 pb-5 pt-3 text-center fon2 nopm">
                 ReachOn Digital has managed over 3,000+ content producers and partners since its start, with over 20 billion minutes of video seen on YouTube, making us India's
             </div>
-            <a class="mx-auto d-block" href="works/works.php" target="_blank">
+
                 <div class=" pt-3 col-sm-4 pb-3 mx-auto ">
+                <a class="mx-auto d-block" href="works/works.php" target="_blank">
                     <div class="btn btn-block but fon1 bgc5 c2 bsb">Works</div>
+                    </a>
                 </div>
-            </a>
+            
         </div>
 
 
@@ -146,7 +148,7 @@
 
 
     <section id="sec3">
-        <div class="head fon1 offset-lg-1 bgc9 offset-sm-1 tsb">Services
+        <div class="head headsm fon1 offset-lg-1 bgc9 offset-sm-1 tsb">Services
             <div class="col-sm-2 ">
                 <div class="ul3 ">
                 </div>
@@ -259,7 +261,7 @@
         </div>
     </section>
 
-    <section id="sec6" class=" pb-5">
+    <section id="sec6" class="">
         <div class="head fon1 offset-sm-1 c5  col-sm-11 headsm tsb">Testimonials
             <div class="col-sm-2 ">
                 <div class="ul5 ">
@@ -567,14 +569,25 @@
                 var nav = $(window).scrollTop();
                 if (nav > 50) {
                     $(".navbar").css("box-shadow", "0 0px 20px rgba(0, 0, 0, 0.5)");
-                    $(".navbar").css("transition", ".5s")
+                    $(".navbar").css("transition", ".5s");
                 } else {
-                    $(".navbar").css("box-shadow", "none")
-
+                    $(".navbar").css("box-shadow", "none");
+                }
+            });
+        });
+        
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var sec = $(window).scrollTop();
+                if (sec > 1) {
+                    $("#sec1").css("position", "fixed");
+                } else {
+                    $("#sec1").css("position", "absolute");
                 }
             });
         });
 
+        
         $(document).ready(function() {
             $(window).scroll(function() {
                 var hme = $(window).scrollTop()
