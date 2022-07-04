@@ -744,7 +744,6 @@ body{
     position: fixed;
     top: 0;
     margin-top: 3% !important;
-    z-index: 15 !important;
 }
 
 .sbtn{
