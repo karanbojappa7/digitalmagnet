@@ -64,6 +64,169 @@ body{
 .bgc12{background-color:;}
 
 
+#preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+    position: fixed;
+    min-height: 100vh;
+    animation: bg ease-in 2.5s forwards 2s;
+    z-index: 50;
+}
+.prebox .loader{
+    position: relative;
+    padding: 5px 10px;
+    border: 2px solid orange;
+    background-color: #000;
+    -webkit-box-reflect:below -20px linear-gradient(transparent, #0003);
+    animation: grad ease-in 1s forwards;
+    animation-delay: 3s;
+}
+.prebox .loader span{
+    position: relative;
+    z-index: 2;
+}
+.prebox .loader::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: orange;
+    box-shadow: -5px -8px 0 orange,
+                -5px 8px 0 orange;
+    box-shadow 0.5s;
+    animation: rightline 1.8s forwards 1s;
+    transform: translateY(-50%); 
+
+}
+.prebox .loader::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: orange;
+    box-shadow: 5px -8px 0 orange,
+                5px 8px 0 orange;
+    box-shadow 0.5s;
+    animation: leftline 1.8s forwards 1s;
+    transform: translateY(-50%);    
+}
+@keyframes bg{
+    0%{
+        background-color: black;
+    }
+    
+    10%{
+        background-color: black;
+    }
+    40%{
+        background-color: black;
+    } 
+    80%{
+        background-color: black;
+    }
+    
+    90%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: orange;
+    }
+}
+@keyframes grad{
+    0%{
+        color:#000;
+        box-shadow: none;
+    } 
+    100%{
+        color: #fff;
+        box-shadow: 0 0 10px orange,
+        0 0 20px orange,
+        0 0 40px orange,
+        0 0 80px orange,
+        0 0 160px orange,
+        0 0 220px orange;
+        background-color:orange;
+    }
+}
+
+@keyframes leftline{
+    0%{
+        width: 20px;
+        height: 2px;
+        left: -20px;    
+        box-shadow: 5px 0 0 orange,
+                    5px 0 0 orange;
+    }
+    
+    10%{
+        width: 80% ,0.5s;
+        height: 95% ,0s;
+        left: -2px ,0s;
+        box-shadow: 5px 0 0 orange,
+                    5px 0 0 orange;
+        width: 50%;
+    }      
+    50%{
+        width: 80% ,0.5s;
+        height: 95% ,2s;
+        left: -2px ,2s;
+        box-shadow: 5px 0 0 orange,
+                    5px 0 0 orange;
+        width: 50%;
+        height: 2px;
+        left: 1px;
+    }      
+    
+    100%{
+        width: 50%;
+        height: 85%;
+        left: 1px;
+    }
+}
+@keyframes rightline{
+    0%{
+        width: 20px;
+        height: 2px;
+        right: -20px;    
+        box-shadow: 5px 0 0 orange,
+                    5px 0 0 orange;
+    }
+    
+    10%{
+        width: 80% ,0.5s;
+        height: 95% ,0s;
+        right: -2px ,0s;
+        box-shadow: 5px 0 0 orange,
+                    5px 0 0 orange;
+        width: 50%;
+    }      
+    50%{
+        width: 80% ,0.5s;
+        height: 95% ,2s;
+        right: -2px ,2s;
+        box-shadow: 5px 0 0 orange,
+                    5px 0 0 orange;
+        width: 50%;
+        height: 2px;
+        right: 1px;
+    }      
+    
+    100%{
+        width: 50%;
+        height: 85%;
+        right: 1px;
+    }
+}
 /*var(--blue)*/
 
 @media only screen and (max-width: 575px) {
@@ -287,7 +450,7 @@ body{
 
 }
 
-#zhigh{
+.zhigh{
     z-index: 10!important;
 }
 
@@ -793,45 +956,6 @@ color: var(--c7) !important;
     
 }
 
-/*
-
-.box1:hover{
-        box-shadow: 0 10px 40px rgba(234, 0, 53, 0.3);
-    transition: .5s;
-}
-.box2:hover{
-        box-shadow: 0 10px 40px rgba(60, 0, 112, 0.5);
-    transition: .5s;
-}
-.box3:hover{
-        box-shadow: 0 10px 40px rgba(252, 85, 255, 0.5);
-    transition: .5s;
-}
-.box4:hover{
-        box-shadow: 0 10px 40px rgba(32, 123, 14, 0.5);
-    transition: .5s;
-}
-.box5:hover{
-        box-shadow: 0 10px 40px rgba(246, 232, 38, 0.363);
-    transition: .5s;
-}
-.box6:hover{
-        box-shadow: 0 10px 40px rgba(1, 89, 216, 0.5);
-    transition: .5s;
-}
-*/
-/*
-
-#example {
-      border: 1px solid #c9c9c9;
-
-}
-*/
-
-
-
-
-
 .socul::after{
     margin-top: 2px;
     margin-left: 5%;
@@ -937,16 +1061,14 @@ a:hover{
 .txt1{
 
     opacity: 0;
-    animation: fade 1.5s linear 500ms forwards;
-    animation-delay: 1s;
+    animation: fade 1.5s linear 6.1s forwards;
 }
 
 
 .txt2{
 
     opacity: 0;
-    animation: fade 1.4s linear 400ms forwards;
-    animation-delay: 1.2s;
+    animation: fade 1.4s linear 6.7s forwards;
 
 }
 
@@ -973,13 +1095,13 @@ a:hover{
     width: 0%;
     height: 80%;
     background-color: var(--c10);
-    animation: swipe 1.5s ease-out 400ms forwards;
+    animation: swipe 1.8s ease-out 5.2s forwards;
 
 }
 
 .swipe--delay::after {
     background-color: #FFF;
-    animation-delay: 0.8s;
+    animation-delay: 5.8s;
 }
 
 

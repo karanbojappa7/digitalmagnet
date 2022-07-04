@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e94d846b38.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--   bootstrap CDN,s  -->
+    <!--   google fonts  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="../scripts/pace.js"></script>
+
+    <!--    files   -->
+    <link rel="stylesheet" href="style_sheets/style.css">
+<!--    <link rel="stylesheet" href="style_sheets/stylee.css">-->
+
+
+</head>
+
+<body>
+
+    <!-- ..start..   -->
+<section id="preloader">
+        <div class="prebox">
+        <div class="container">
+            <a href="" class="mx-auto d-block col-sm-4 loader">
+                <span>
+                    <img src="../style_sheets/pictures/logolgwhite.png" width="100%" class="mx-auto d-block preimg p-3">
+                </span>
+            </a>
+        </div>
+
+    </div>
+    </section>
+    
+    <section class="temp"></section>
+
+    <script>
+        paceOptions = {
+            ajax: true,
+            document: true,
+            eventLag: false
+        };
+        Pace.on('done', function() {
+            $('#preloader').delay(5000).animate({
+                top: '-110%'
+            }, 2000, $.bez([0.19, 1, 0.22, 1]));
+        });
+    </script>
+    <!--  script's  -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

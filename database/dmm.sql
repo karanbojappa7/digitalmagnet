@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2022 at 01:21 PM
+-- Generation Time: Jul 04, 2022 at 04:33 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -44,7 +44,8 @@ INSERT INTO `query` (`id`, `name`, `num`, `mail`, `message`) VALUES
 (2, 'karan', '9964642973', 'karanbojappa7@gmail.com', 'escn'),
 (3, 'bb', '9964642973', 'karanbojappa7@gmail.com', 'testing'),
 (4, 'karan', '9964642973', 'karanbojappa7@gmail.com', 'testing 2'),
-(16, 'karan', '9964642973', 'karanbojappa7@gmail.com', 'testing 3');
+(16, 'karan', '9964642973', 'karanbojappa7@gmail.com', 'testing 3'),
+(17, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -66,7 +67,8 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`user_id`, `user_GUID`, `email`, `password`, `entry_date`, `status`) VALUES
-(7, 'cb509842a06', 'karan@gmail.com', 'f657341142496be46f5318b3dc8e27f1', 2147483647, 0);
+(7, 'cb509842a06', 'karan@gmail.com', 'f657341142496be46f5318b3dc8e27f1', 2147483647, 0),
+(8, '4477706966e', 'admin@admin.com', 'e6e061838856bf47e1de730719fb2609', 2147483647, 0);
 
 -- --------------------------------------------------------
 
@@ -85,7 +87,8 @@ CREATE TABLE `tbl_user_profile` (
 --
 
 INSERT INTO `tbl_user_profile` (`profile_id`, `user_id`, `name`) VALUES
-(6, 7, 'karan');
+(6, 7, 'karan'),
+(7, 8, 'Dhanu Krishna');
 
 -- --------------------------------------------------------
 
@@ -146,25 +149,25 @@ ALTER TABLE `yt`
 -- AUTO_INCREMENT for table `query`
 --
 ALTER TABLE `query`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tbl_user_profile`
 --
 ALTER TABLE `tbl_user_profile`
-  MODIFY `profile_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `profile_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `yt`
 --
 ALTER TABLE `yt`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
