@@ -298,12 +298,7 @@ body{
     .txt2{
         font-size: .8em !important;
     }
-    
-/*
-    .git{
-        margin-top: 25% !important;
-    }
-*/
+
     .scr{
         padding-bottom: 10% !important;
     }
@@ -742,7 +737,6 @@ body{
     cursor: pointer;
     transition: .5s;
     position: fixed;
-    top: 0;
     margin-top: 3% !important;
 }
 
@@ -1141,7 +1135,7 @@ a:hover{
 
 
 .but{
-    border: 2px solid var(--c10);
+    border: 1px solid var(--c10);
     padding: 10px 20px;
     min-width: 200px;
     cursor: pointer;
@@ -1151,9 +1145,8 @@ a:hover{
     box-shadow: 0 10px 25px -20px rgba(255,255,255,0.2);
 }
 .but:hover{
-  color: var(--c8);
-    z-index: 5;
-    
+    border-color: var(--c2);
+    color: var(--c8);    
 }
 .but::before{
   content: '';
@@ -1520,7 +1513,7 @@ transition: transform .5s;
 
 #about{
     width: 100%;
-    background-color: 
+    background-color: var(--c7); 
 }
 
 .abtbox{
